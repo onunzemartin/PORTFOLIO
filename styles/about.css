@@ -1,0 +1,347 @@
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* overflow:hidden; */
+   
+}
+
+hr{
+    width: 1150px;
+    border:1px solid rgb(255, 255, 255);
+    
+    margin-left: 100px;
+   
+}
+.contain{
+    display: flex;
+    justify-content: space-between;
+   margin-top:60px;
+    padding: 2em;
+}
+
+.cv-info{
+  background: black;
+}
+.profile-pic{
+    margin-left: 20px;
+   
+    
+}
+
+
+.biopic{
+
+    height: 200;
+    width: 300;
+    border:4px solid yellow;
+    margin-top:0;
+}
+
+.biopic:hover{
+    height: 500;
+    width: 600;
+}
+
+
+.bioinfo{
+    display: flex;
+    padding-left: 300px;
+
+}
+
+
+
+
+
+/* .cvdown{
+    display:flex;
+    margin-left: 20px;
+    margin-top: -60px;
+    padding: 3em;
+    justify-content: center;
+    align-items: center;
+
+} */
+
+.btn-download{
+    text-transform: uppercase;
+    color:white;
+    padding: 0.8em;
+    background-color: black;
+    border-radius: 40px;
+}
+
+ .btn-download:hover{
+    background-color: none;
+    border: 1px solid aqua;
+    border-radius: 40px;
+ }
+ul{
+    list-style-type: none;
+    color: white;
+}
+
+
+
+.font-weight-600{
+    padding-right: 20px;
+    margin-bottom: 50px;
+    line-height: 20px;
+}
+
+.list-1>li, .list-2>li{
+    margin-bottom: 30px;
+ 
+}
+
+/* general */
+.containe{
+    margin-bottom: 60px;
+  }
+  /* experience */
+  
+  .divid{
+   width: 50%;
+
+  }
+
+  h2 {
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+  }
+  
+  
+  .uppercase {
+    text-transform: uppercase;
+  }
+  
+  .title-section {
+    margin-bottom: 50px;
+    font-size: 23px;
+    color: #FFF;
+  }
+  
+  .resume-container h6 i {
+    padding-right: 7px;
+  }
+  
+  .resume-items .item .bullet:before,.resume-items .item-label {
+    line-height: 40px!important;
+    top: 0;
+    text-align: center;
+    color: #252020;
+  }
+  
+  .resume-items .item .card,.resume-items .item .card-header {
+    background-color: transparent;
+    font-size: 16px;
+    border: 0;
+  }
+  
+  .resume-items .item .card-header {
+    border-bottom: 0;
+    position: relative;
+    padding: 32px 0 10px;
+    color: #FFF;
+  }
+  
+  .resume-items .item .card-header > span > p {
+    font-family: 'Poppins', sans-serif;
+    font-size:16px;
+    color: #FFF;
+  }
+  
+  .resume-items .item .card-header .year {
+    font-family: 'Open Sans', sans-serif;
+    position: absolute;
+    top: -2px;
+    color: #FFF;
+    font-size: 13px;
+    opacity: .8;
+    font-weight: 400;
+  }
+  
+  .resume-items .item .card-header .year i {
+      padding-right: 10px;
+    color: #FFF;
+  }
+  
+  
+  .resume-items .item .card-header > span > span {
+    font-weight: 600;
+    color: #FFF;
+  }
+  
+  .resume-items .item .card-header .separator {
+    display: inline-block;
+    width: 10px;
+    background: #555;
+    height: 2px;
+    margin: 0 7px 3px 7px;
+    vertical-align: middle;
+    color: #FFF;
+  }
+  
+  .resume-items .item .card-body {
+    padding: 0;
+  }
+  
+  .resume-items .item .card-body p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    margin: 0;
+    line-height: 28px;
+    color: #FFF;
+  }
+  
+  .resume-items .item {
+    position: relative;
+  }
+  
+  .resume-items .item:not(:last-child) {
+    padding-bottom: 50px;
+  }
+  
+  .resume-items .item:before {
+    content: '';
+    display: none;
+    height: 100%;
+    left: 7px;
+    opacity: .6;
+    position: absolute;
+    top: 0;
+    width: 1px;
+  }
+  
+  .resume-items .item-label {
+    display: block;
+    font-weight: 600;
+    height: 40px;
+    left: 50%;
+    margin-left: -60px;
+    margin-top: -20px;
+    position: absolute;
+    width: 120px;
+    z-index: 10;
+    border-radius: 4px;
+  }
+  
+  .resume-items .item .bullet {
+    /* display: none; */
+    height: 15px;
+    left: 0px;
+    position: absolute;
+    background: #fff;
+    top: 0;
+    width: 15px;
+    border-radius: 50%;
+  }
+  
+  .resume-items .item .card {
+    width: 100%;
+  }
+  
+  @media (min-width:768px) {
+    .resume-items .item .bullet,.resume-items .item:before {
+      display: block;
+    }
+  
+    .resume-items .item-label {
+      left: 0;
+      margin-left: 0;
+      margin-top: 0;
+    }
+  
+    .resume-items .item .card {
+      margin-left: 39px;
+      width: calc(100% - 39px);
+    }
+  }
+  
+  /*** Skills ***/
+  
+  
+  .chart-bar>.item-progress{
+      background-color: #ffb400;
+  }
+  
+  .chart-bar{
+    font-family: 'Poppins', sans-serif;
+    color: #555;
+    background: #c4a417;
+    font-size: 0.9em;
+    font-weight: 400;
+    width:400px;
+    margin-bottom: 45px;
+    margin-top:7px;
+    border-radius: 2px;
+    display: block;
+    height: 4px;
+    position: relative;
+    width: 80%;
+    background: #ddd;
+  
+  }
+  
+  
+  .skill-text, .skills-title{
+    color: white;
+    text-transform: uppercase;
+  }
+  
+  .chart-bar>.item-progress {
+    border-radius: 2px;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 1%;
+  }
+  
+  .chart-bar>.percent {
+    height: 32px;
+    margin-top: -41px;
+    position: absolute;
+    right: calc(100% - 40px);
+    width: 46px;
+    z-index: 10;
+    color: #ffffff;
+    border-radius: 4px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 31px;
+    top: 50%;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+  }
+  
+  
+  .chart-bar>.percent span {
+    position: relative;
+    display: block;
+  }
+  
+  
+  .arrow {
+      display: inline-block;
+      padding: 4px;
+      transform: translateY(33.5px) rotate(45deg) skew(3deg, 3deg) translateX(-27px);
+      background-color: #FFF;
+      bottom:8px;
+      position:absolute;
+  }
+  
+  /* .btn-resume {
+    margin-top: 30px;
+  } */
+  
+  /*  */
+
+
+
