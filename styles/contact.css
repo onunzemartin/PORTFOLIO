@@ -111,16 +111,18 @@ background: rgba(211, 0, 0, 0.2);
         text-transform: uppercase;
         border: none;
         background-color: transparent;
-        
+        padding: 10px 30px;
         border: 1px solid white;
-        padding: 5px;
+        
         
     }
 
     .btnsub:hover{
      
         border-radius: 10px;
-        border: 1px solid white;
+        color: rgb(87, 177, 87);
+        /* border: 1px solid white; */
+    
         
         
     }
