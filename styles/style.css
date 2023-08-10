@@ -20,7 +20,7 @@ a:hover {
   padding: 0 80px;
   margin: auto;
 }
-.titlec{
+.titlec {
   color: yellow;
 }
 /* THE NAVIGATION */
@@ -107,10 +107,11 @@ nav ul li a {
   position: relative;
 }
 
-.mypic{
+.mypic {
   position: absolute;
   left: 650px;
   top: 63px;
+  /* display: none; */
 }
 
 .dev {
@@ -140,8 +141,7 @@ nav ul li a {
   margin: 5px 0;
 }
 
-
-.dev{
+.dev {
   color: yellow;
   z-index: 99;
   font-weight: bold;
@@ -236,7 +236,6 @@ section {
 
 .about .about-content .right p {
   text-align: justify;
-  
 }
 .about .about-content .right a {
   display: inline-block;
@@ -271,9 +270,9 @@ footer {
   background-color: black;
 }
 
-
-span a, span a:hover{
-  color: white ;
+span a,
+span a:hover {
+  color: white;
 }
 
 /* RESPONSIVE Media */
@@ -309,7 +308,6 @@ span a, span a:hover{
 
   nav ul li a,
   nav label {
-   
     color: #ffffff;
     cursor: pointer;
   }
@@ -341,14 +339,12 @@ span a, span a:hover{
 
 /* END OF THE NAVIGATION */
 
-
-
-@media screen and (max-width: 600px){
+@media screen and (max-width: 600px) {
   .max-width {
     padding: 0 20px;
   }
 
-  .mypic img{
+  .mypic img {
     display: none;
   }
   .home .home-content .text-2 {
@@ -364,8 +360,6 @@ span a, span a:hover{
     font-size: 15px;
   }
 
-  
-  
   .about .about-content {
     justify-content: space-between;
   }
@@ -405,7 +399,6 @@ span a, span a:hover{
     margin: 50px -10px;
   }
 
-
   .social ul li:hover i {
     transform: scale(0);
   }
@@ -425,135 +418,122 @@ span a, span a:hover{
   }
 }
 
-@media screen and (min-width: 601px) and (max-width: 1023px){
-      .bd-placeholder-img-lg {
-        font-size: 3.5rem;
-      }
-
-      .max-width{
-        padding-left: 30px;
-      }
-
-      
-
-      .home .home-content .text-2 {
-        font-size: 50px;
-      }
-    
-      .home .home-content .text-3 {
-        font-size: 30px;
-      }
-      .home .home-content a {
-        font-size: 20px;
-      }
-
-
-      .menu-btn {
-        display: block;
-        z-index: 999;
-      }
-      .menu-btn i.active::before {
-        content: " \f00d";
-      }
-    
-      .navbar .menu {
-        position: fixed;
-        height: 100vh;
-        width: 100%;
-        left: -100%;
-        top: 0;
-        background: #111;
-        text-align: center;
-        padding-top: 80px;
-        transition: all 0.5s ease;
-      }
-      .navbar .menu.active {
-        left: 0;
-      }
-      .navbar .menu li {
-        display: block;
-      }
-    
-      .navbar .menu li a {
-        display: inline-block;
-        margin: 20px 0;
-        font-size: 25px;
-      }
-    
-      .about .about-content .right .text {
-    
-        font-size: 20px;
-      }
-       
-      .about-content{
-        justify-content: space-between;
-      }
-
-      .about .about-content .right {
-        width: 100%;
-      }
-      .column-left .passport{
-        width: 150px;
-      }
-
-      .bioinfo {
-    
-        margin-left: 2px;
-      }
-    
-      li h6 {
-        font-size: 19px;
-      }
-      .bio-title {
-        font-size: 21px;
-        margin-left: 30px;
-        
-      }
-
-      .social ul {
-        gap: 6px;
-      }
-    
-      .social ul li {
-        margin: 50px 10px;
-      }
-    
-    
-      .social ul li:hover i {
-        transform: scale(0);
-      }
-    
-      .social ul li:hover .titulo {
-        transform: scale(0);
-        /* transition-delay: 0.25s; */
-      }
-      .social ul li:hover::before {
-        opacity: 0;
-      }
-      .social ul li:hover {
-        width: 60px;
-      }
-
-}
-
-@media screen and (max-width: 975px){
- 
-    .mypic{
-      position: absolute;
-      left: 550px;
-      top: 63px;
-      
-    }
-  
-}
-
-@media screen and (max-width: 601px){
-  .mypic{
-    position: absolute;
-    left: 370px;
-    
-    top: 130px;
-    
+@media screen and (min-width: 601px) and (max-width: 1023px) {
+  .bd-placeholder-img-lg {
+    font-size: 3.5rem;
   }
 
+  .max-width {
+    padding-left: 30px;
+  }
+
+  .home .home-content .text-2 {
+    font-size: 50px;
+  }
+
+  .home .home-content .text-3 {
+    font-size: 30px;
+  }
+  .home .home-content a {
+    font-size: 20px;
+  }
+
+  .menu-btn {
+    display: block;
+    z-index: 999;
+  }
+  .menu-btn i.active::before {
+    content: " \f00d";
+  }
+
+  .navbar .menu {
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    left: -100%;
+    top: 0;
+    background: #111;
+    text-align: center;
+    padding-top: 80px;
+    transition: all 0.5s ease;
+  }
+  .navbar .menu.active {
+    left: 0;
+  }
+  .navbar .menu li {
+    display: block;
+  }
+
+  .navbar .menu li a {
+    display: inline-block;
+    margin: 20px 0;
+    font-size: 25px;
+  }
+
+  .about .about-content .right .text {
+    font-size: 20px;
+  }
+
+  .about-content {
+    justify-content: space-between;
+  }
+
+  .about .about-content .right {
+    width: 100%;
+  }
+  .column-left .passport {
+    width: 150px;
+  }
+
+  .bioinfo {
+    margin-left: 2px;
+  }
+
+  li h6 {
+    font-size: 19px;
+  }
+  .bio-title {
+    font-size: 21px;
+    margin-left: 30px;
+  }
+
+  .social ul {
+    gap: 6px;
+  }
+
+  .social ul li {
+    margin: 50px 10px;
+  }
+
+  .social ul li:hover i {
+    transform: scale(0);
+  }
+
+  .social ul li:hover .titulo {
+    transform: scale(0);
+    /* transition-delay: 0.25s; */
+  }
+  .social ul li:hover::before {
+    opacity: 0;
+  }
+  .social ul li:hover {
+    width: 60px;
+  }
+}
+
+@media screen and (max-width: 975px) {
+  .mypic {
+    position: absolute;
+    left: 550px;
+    top: 63px;
+  }
+}
+
+@media screen and (max-width: 801px) {
+  .mypic {
+    position: absolute;
+    left: 370px;
+
+    top: 130px;
+  }
 }

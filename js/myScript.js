@@ -12,4 +12,4 @@ $(document).ready(function(){
         $('.menu-btn i').toggleClass("active");
     })
 }); 
-// before using above for navbar link your jquery script in html body.
+
