@@ -19,6 +19,7 @@ a:hover {
   max-width: 1300px;
   padding: 0 80px;
   margin: auto;
+  animation: slideInLeft 2s ease-in;
 }
 .titlec {
   color: yellow;
@@ -99,18 +100,20 @@ nav ul li a {
 
 .home {
   display: flex;
-  background: url(../images/banner1.jpg) no-repeat center/cover;
+  background: url(../images/banner2b.png) no-repeat center/cover;
   height: 100vh;
   color: white;
   min-height: 500px;
   font-family: Arial, Helvetica, sans-serif;
   position: relative;
+  /* filter: contrast(80%); */
 }
 
 .mypic {
   position: absolute;
   left: 650px;
   top: 63px;
+  animation: slideInRight 1s ease-in;
   /* display: none; */
 }
 
@@ -120,10 +123,6 @@ nav ul li a {
 
 .home .max-width {
   margin: auto 0 auto 40px;
-}
-
-.home-content {
-  filter: none;
 }
 
 .home .home-content .text-1 {
@@ -275,6 +274,24 @@ span a:hover {
   color: white;
 }
 
+/* ANIMATIONS */
+@keyframes slideInLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes slideInRight {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
 /* RESPONSIVE Media */
 
 @media screen and (max-width: 1000px) {
@@ -342,6 +359,7 @@ span a:hover {
 @media screen and (max-width: 600px) {
   .max-width {
     padding: 0 20px;
+    animation: slideInLeft 2s ease-in;
   }
 
   .mypic img {
@@ -425,6 +443,7 @@ span a:hover {
 
   .max-width {
     padding-left: 30px;
+    animation: slideInLeft 2s ease-in;
   }
 
   .home .home-content .text-2 {
@@ -526,6 +545,7 @@ span a:hover {
     position: absolute;
     left: 550px;
     top: 63px;
+    animation: slideInRight 1s ease-in;
   }
 }
 
@@ -533,7 +553,7 @@ span a:hover {
   .mypic {
     position: absolute;
     left: 370px;
-
+    animation: slideInRight 1s ease-in;
     top: 130px;
   }
 }
